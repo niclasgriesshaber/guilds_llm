@@ -16,7 +16,7 @@ You can also explain to the Agent what changes you want to make and put your own
 
 **Note:** To access GPT-4o for LLM-based analysis, you will need an OpenAI API key. You can generate one at [https://platform.openai.com/api-keys](https://platform.openai.com/api-keys). The API key must be inserted in one of the code cells (prior to any LLM API calls) in the Jupyter notebooks. All relevant cells are clearly commented to guide you through this process. Alternatively, you can also create an .env file to store your API keys there.
 
-## Repository Structure (Refined)
+## Repository Structure
 
 - **01_llm_digitization/**
   - **llm_digitization_code/**
@@ -24,7 +24,7 @@ You can also explain to the Agent what changes you want to make and put your own
     - `02_text_files_to_csv.ipynb`: Converts text files of guild ordinances into structured CSV datasets.
   - **llm_digitization_data/**
     - **archival_image_scans/**: Contains subfolders with original image scans (TIFF format) of guild ordinances from Mexico and Peru. *Note: These files are not tracked in git and are available upon request for replication.*
-    - **full_text_data/**: Contains plain text transcriptions of the full content of each ordinance, organized by country and guild.
+    - **full_text_data/**: Contains plain text transcriptions of the full content of each ordinance, organized by country and guild. *Note: These files are not tracked in git and are available upon request for replication.*
     - **regulations_text_data/**: Contains only the regulatory paragraphs from each ordinance, as plain text files, organized by country and guild.
 
 - **02_llm_classification/**

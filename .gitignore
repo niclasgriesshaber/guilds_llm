@@ -1,6 +1,6 @@
 *.tif
 **/*.tif 
-01_llm_digitization/llm_digitization_data/full_text_data/**/*.txt 
+
 01_llm_digitization/llm_digitization_data/archival_image_scans/mexico/*/
 01_llm_digitization/llm_digitization_data/archival_image_scans/peru/*/
 01_llm_digitization/llm_digitization_data/full_text_data/mexico/*/
