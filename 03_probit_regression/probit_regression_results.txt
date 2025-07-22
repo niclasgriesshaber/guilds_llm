@@ -5,35 +5,35 @@ Probit Regression Results for 'entry_barriers':
 Dep. Variable:         entry_barriers   No. Observations:                 1044
 Model:                         Probit   Df Residuals:                     1038
 Method:                           MLE   Df Model:                            5
-Date:                Sun, 29 Sep 2024   Pseudo R-squ.:               0.0004500
-Time:                        23:58:36   Log-Likelihood:                -179.17
-converged:                       True   LL-Null:                       -179.26
-Covariance Type:                  HC3   LLR p-value:                    0.9995
+Date:                Wed, 02 Oct 2024   Pseudo R-squ.:                0.007134
+Time:                        22:31:50   Log-Likelihood:                -152.15
+converged:                       True   LL-Null:                       -153.25
+Covariance Type:                  HC3   LLR p-value:                    0.8228
 =========================================================================================================
                                             coef    std err          z      P>|z|      [0.025      0.975]
 ---------------------------------------------------------------------------------------------------------
 Intercept                                -1.7747      0.260     -6.817      0.000      -2.285      -1.264
 C(dummy_mexico)[T.1]                      0.0755      0.333      0.227      0.820      -0.577       0.728
 C(century)[T.17]                          0.0430      0.295      0.146      0.884      -0.535       0.621
-C(century)[T.18]                          0.0086      0.289      0.030      0.976      -0.558       0.575
+C(century)[T.18]                         -0.2061      0.300     -0.688      0.492      -0.793       0.381
 C(dummy_mexico)[T.1]:C(century)[T.17]    -0.0945      0.483     -0.196      0.845      -1.041       0.852
-C(dummy_mexico)[T.1]:C(century)[T.18]    -0.0119      0.388     -0.031      0.976      -0.772       0.748
+C(dummy_mexico)[T.1]:C(century)[T.18]     0.0179      0.405      0.044      0.965      -0.776       0.812
 =========================================================================================================
 
 Average Marginal Effects:
    Century      dy/dx    Std. Err.        z    P>|z|   [95% Conf. Interval]
         16  0.0066682    0.0290386     0.23   0.8184 [-0.0502475, 0.0635838]
         17 -0.0016667    0.0303192    -0.05   0.9562 [-0.0610922, 0.0577589]
-        18  0.0056445    0.0178721     0.32   0.7521 [-0.0293848, 0.0406738]
+        18  0.0057471    0.0145076     0.40   0.6920 [-0.0226878, 0.0341820]
 
 Tests of Equality of Marginal Effects:
 Test ME at century 16 vs 17: chi2(1) = 0.04, P>|chi2| = 0.8426
-Test ME at century 16 vs 18: chi2(1) = 0.00, P>|chi2| = 0.9760
-Test ME at century 17 vs 18: chi2(1) = 0.04, P>|chi2| = 0.8354
+Test ME at century 16 vs 18: chi2(1) = 0.00, P>|chi2| = 0.9774
+Test ME at century 17 vs 18: chi2(1) = 0.05, P>|chi2| = 0.8254
 
 Summary Statistics for 'entry_barriers':
 Variable               Obs       Mean    Std. Dev.      Min      Max
-entry_barriers        1044  0.0411877    0.1988194        0        1
+entry_barriers        1044  0.0335249    0.1800890        0        1
 
 --------------------------------------------------------------------------------
 
@@ -43,35 +43,35 @@ Probit Regression Results for 'human_capital':
 Dep. Variable:          human_capital   No. Observations:                 1044
 Model:                         Probit   Df Residuals:                     1038
 Method:                           MLE   Df Model:                            5
-Date:                Sun, 29 Sep 2024   Pseudo R-squ.:                 0.02758
-Time:                        23:58:36   Log-Likelihood:                -603.51
-converged:                       True   LL-Null:                       -620.62
-Covariance Type:                  HC3   LLR p-value:                 2.140e-06
+Date:                Wed, 02 Oct 2024   Pseudo R-squ.:                 0.03350
+Time:                        22:31:50   Log-Likelihood:                -428.86
+converged:                       True   LL-Null:                       -443.73
+Covariance Type:                  HC3   LLR p-value:                 1.667e-05
 =========================================================================================================
                                             coef    std err          z      P>|z|      [0.025      0.975]
 ---------------------------------------------------------------------------------------------------------
-Intercept                                -0.5874      0.150     -3.910      0.000      -0.882      -0.293
-C(dummy_mexico)[T.1]                      0.0214      0.196      0.109      0.913      -0.362       0.405
-C(century)[T.17]                          0.3281      0.169      1.938      0.053      -0.004       0.660
-C(century)[T.18]                         -0.0410      0.167     -0.245      0.806      -0.369       0.287
-C(dummy_mexico)[T.1]:C(century)[T.17]    -0.3450      0.283     -1.220      0.223      -0.899       0.209
-C(dummy_mexico)[T.1]:C(century)[T.18]    -0.3973      0.235     -1.694      0.090      -0.857       0.062
+Intercept                                -1.0283      0.172     -5.987      0.000      -1.365      -0.692
+C(dummy_mexico)[T.1]                      0.1739      0.219      0.795      0.427      -0.255       0.603
+C(century)[T.17]                          0.3054      0.192      1.594      0.111      -0.070       0.681
+C(century)[T.18]                         -0.1366      0.193     -0.707      0.479      -0.515       0.242
+C(dummy_mexico)[T.1]:C(century)[T.17]    -0.5312      0.322     -1.650      0.099      -1.162       0.100
+C(dummy_mexico)[T.1]:C(century)[T.18]    -0.4925      0.271     -1.815      0.069      -1.024       0.039
 =========================================================================================================
 
 Average Marginal Effects:
    Century      dy/dx    Std. Err.        z    P>|z|   [95% Conf. Interval]
-        16  0.0072333    0.0660724     0.11   0.9128 [-0.1222687, 0.1367352]
-        17 -0.1177273    0.0702805    -1.68   0.0939 [-0.2554771, 0.0200225]
-        18 -0.1072455    0.0351232    -3.05   0.0023 [-0.1760870, -0.0384039]
+        16  0.0445298    0.0551364     0.81   0.4193 [-0.0635376, 0.1525973]
+        17 -0.0948485    0.0555757    -1.71   0.0879 [-0.2037769, 0.0140799]
+        18 -0.0530583    0.0252022    -2.11   0.0353 [-0.1024547, -0.0036619]
 
 Tests of Equality of Marginal Effects:
-Test ME at century 16 vs 17: chi2(1) = 1.68, P>|chi2| = 0.1952
-Test ME at century 16 vs 18: chi2(1) = 2.34, P>|chi2| = 0.1260
-Test ME at century 17 vs 18: chi2(1) = 0.02, P>|chi2| = 0.8939
+Test ME at century 16 vs 17: chi2(1) = 3.17, P>|chi2| = 0.0750
+Test ME at century 16 vs 18: chi2(1) = 2.59, P>|chi2| = 0.1075
+Test ME at century 17 vs 18: chi2(1) = 0.47, P>|chi2| = 0.4935
 
 Summary Statistics for 'human_capital':
 Variable               Obs       Mean    Std. Dev.      Min      Max
-human_capital         1044  0.2816092    0.4499994        0        1
+human_capital         1044  0.1513410    0.3585527        0        1
 
 --------------------------------------------------------------------------------
 
@@ -81,35 +81,35 @@ Probit Regression Results for 'product_quality':
 Dep. Variable:        product_quality   No. Observations:                 1044
 Model:                         Probit   Df Residuals:                     1038
 Method:                           MLE   Df Model:                            5
-Date:                Sun, 29 Sep 2024   Pseudo R-squ.:                 0.04857
-Time:                        23:58:36   Log-Likelihood:                -518.91
-converged:                       True   LL-Null:                       -545.40
-Covariance Type:                  HC3   LLR p-value:                 3.401e-10
+Date:                Wed, 02 Oct 2024   Pseudo R-squ.:                 0.04989
+Time:                        22:31:51   Log-Likelihood:                -571.93
+converged:                       True   LL-Null:                       -601.96
+Covariance Type:                  HC3   LLR p-value:                 1.176e-11
 =========================================================================================================
                                             coef    std err          z      P>|z|      [0.025      0.975]
 ---------------------------------------------------------------------------------------------------------
-Intercept                                -1.2744      0.192     -6.650      0.000      -1.650      -0.899
-C(dummy_mexico)[T.1]                      0.7856      0.228      3.444      0.001       0.339       1.233
-C(century)[T.17]                          0.4081      0.211      1.933      0.053      -0.006       0.822
-C(century)[T.18]                          0.1525      0.210      0.725      0.468      -0.260       0.565
-C(dummy_mexico)[T.1]:C(century)[T.17]    -0.2778      0.305     -0.912      0.362      -0.875       0.319
-C(dummy_mexico)[T.1]:C(century)[T.18]    -0.0630      0.260     -0.242      0.809      -0.573       0.447
+Intercept                                -0.9759      0.168     -5.797      0.000      -1.306      -0.646
+C(dummy_mexico)[T.1]                      0.5858      0.208      2.819      0.005       0.179       0.993
+C(century)[T.17]                          0.3368      0.188      1.794      0.073      -0.031       0.705
+C(century)[T.18]                         -0.0657      0.188     -0.349      0.727      -0.434       0.303
+C(dummy_mexico)[T.1]:C(century)[T.17]    -0.2521      0.287     -0.877      0.380      -0.815       0.311
+C(dummy_mexico)[T.1]:C(century)[T.18]     0.2506      0.241      1.040      0.298      -0.222       0.723
 =========================================================================================================
 
 Average Marginal Effects:
    Century      dy/dx    Std. Err.        z    P>|z|   [95% Conf. Interval]
-        16  0.2112342    0.0554102     3.81   0.0001 [0.1026303, 0.3198381]
-        17  0.1668182    0.0720999     2.31   0.0207 [0.0255025, 0.3081339]
-        18  0.2138752    0.0381001     5.61   0.0000 [0.1391991, 0.2885514]
+        16  0.1836573    0.0613732     2.99   0.0028 [0.0633659, 0.3039487]
+        17  0.1186364    0.0737785     1.61   0.1078 [-0.0259694, 0.2632421]
+        18  0.2699097    0.0396984     6.80   0.0000 [0.1921008, 0.3477185]
 
 Tests of Equality of Marginal Effects:
-Test ME at century 16 vs 17: chi2(1) = 0.24, P>|chi2| = 0.6252
-Test ME at century 16 vs 18: chi2(1) = 0.00, P>|chi2| = 0.9687
-Test ME at century 17 vs 18: chi2(1) = 0.33, P>|chi2| = 0.5639
+Test ME at century 16 vs 17: chi2(1) = 0.46, P>|chi2| = 0.4981
+Test ME at century 16 vs 18: chi2(1) = 1.39, P>|chi2| = 0.2380
+Test ME at century 17 vs 18: chi2(1) = 3.26, P>|chi2| = 0.0710
 
 Summary Statistics for 'product_quality':
 Variable               Obs       Mean    Std. Dev.      Min      Max
-product_quality       1044  0.2164751    0.4120391        0        1
+product_quality       1044  0.2634100    0.4406940        0        1
 
 --------------------------------------------------------------------------------
 
@@ -119,35 +119,35 @@ Probit Regression Results for 'markets':
 Dep. Variable:                markets   No. Observations:                 1044
 Model:                         Probit   Df Residuals:                     1038
 Method:                           MLE   Df Model:                            5
-Date:                Sun, 29 Sep 2024   Pseudo R-squ.:                 0.06378
-Time:                        23:58:36   Log-Likelihood:                -300.10
-converged:                       True   LL-Null:                       -320.55
-Covariance Type:                  HC3   LLR p-value:                 9.873e-08
+Date:                Wed, 02 Oct 2024   Pseudo R-squ.:                 0.03830
+Time:                        22:31:51   Log-Likelihood:                -285.68
+converged:                       True   LL-Null:                       -297.05
+Covariance Type:                  HC3   LLR p-value:                 0.0003763
 =========================================================================================================
                                             coef    std err          z      P>|z|      [0.025      0.975]
 ---------------------------------------------------------------------------------------------------------
-Intercept                                -1.6387      0.237     -6.921      0.000      -2.103      -1.175
-C(dummy_mexico)[T.1]                     -0.1640      0.325     -0.504      0.614      -0.802       0.474
-C(century)[T.17]                         -0.2959      0.286     -1.033      0.301      -0.857       0.265
-C(century)[T.18]                          0.6099      0.251      2.430      0.015       0.118       1.102
-C(dummy_mexico)[T.1]:C(century)[T.17]     0.6936      0.445      1.557      0.119      -0.179       1.567
-C(dummy_mexico)[T.1]:C(century)[T.18]     0.0573      0.354      0.162      0.871      -0.637       0.751
+Intercept                                -1.7747      0.260     -6.817      0.000      -2.285      -1.264
+C(dummy_mexico)[T.1]                      0.1635      0.325      0.502      0.615      -0.474       0.801
+C(century)[T.17]                         -0.0491      0.299     -0.164      0.870      -0.636       0.538
+C(century)[T.18]                          0.6243      0.275      2.273      0.023       0.086       1.163
+C(dummy_mexico)[T.1]:C(century)[T.17]     0.4853      0.425      1.142      0.253      -0.347       1.318
+C(dummy_mexico)[T.1]:C(century)[T.18]    -0.3032      0.358     -0.847      0.397      -1.005       0.398
 =========================================================================================================
 
 Average Marginal Effects:
    Century      dy/dx    Std. Err.        z    P>|z|   [95% Conf. Interval]
-        16 -0.0149186    0.0302648    -0.49   0.6221 [-0.0742377, 0.0444004]
-        17  0.0534848    0.0396204     1.35   0.1770 [-0.0241711, 0.1311408]
-        18 -0.0237069    0.0305499    -0.78   0.4377 [-0.0835847, 0.0361709]
+        16  0.0155967    0.0302511     0.52   0.6062 [-0.0436955, 0.0748889]
+        17  0.0859091    0.0472941     1.82   0.0693 [-0.0067873, 0.1786055]
+        18 -0.0264778    0.0276231    -0.96   0.3378 [-0.0806191, 0.0276635]
 
 Tests of Equality of Marginal Effects:
-Test ME at century 16 vs 17: chi2(1) = 1.88, P>|chi2| = 0.1701
-Test ME at century 16 vs 18: chi2(1) = 0.04, P>|chi2| = 0.8381
-Test ME at century 17 vs 18: chi2(1) = 2.38, P>|chi2| = 0.1229
+Test ME at century 16 vs 17: chi2(1) = 1.57, P>|chi2| = 0.2104
+Test ME at century 16 vs 18: chi2(1) = 1.05, P>|chi2| = 0.3044
+Test ME at century 17 vs 18: chi2(1) = 4.21, P>|chi2| = 0.0402
 
 Summary Statistics for 'markets':
 Variable               Obs       Mean    Std. Dev.      Min      Max
-markets               1044  0.0919540    0.2890995        0        1
+markets               1044  0.0823755    0.2750677        0        1
 
 --------------------------------------------------------------------------------
 
@@ -157,35 +157,35 @@ Probit Regression Results for 'enforcement':
 Dep. Variable:            enforcement   No. Observations:                 1044
 Model:                         Probit   Df Residuals:                     1038
 Method:                           MLE   Df Model:                            5
-Date:                Sun, 29 Sep 2024   Pseudo R-squ.:                 0.01828
-Time:                        23:58:36   Log-Likelihood:                -707.25
-converged:                       True   LL-Null:                       -720.42
-Covariance Type:                  HC3   LLR p-value:                 7.683e-05
+Date:                Wed, 02 Oct 2024   Pseudo R-squ.:                 0.01923
+Time:                        22:31:51   Log-Likelihood:                -708.36
+converged:                       True   LL-Null:                       -722.25
+Covariance Type:                  HC3   LLR p-value:                 4.023e-05
 =========================================================================================================
                                             coef    std err          z      P>|z|      [0.025      0.975]
 ---------------------------------------------------------------------------------------------------------
-Intercept                                 0.4424      0.146      3.027      0.002       0.156       0.729
-C(dummy_mexico)[T.1]                     -0.2396      0.189     -1.270      0.204      -0.609       0.130
-C(century)[T.17]                         -0.5565      0.165     -3.366      0.001      -0.881      -0.233
-C(century)[T.18]                         -0.6681      0.162     -4.134      0.000      -0.985      -0.351
-C(dummy_mexico)[T.1]:C(century)[T.17]     0.2028      0.271      0.749      0.454      -0.328       0.733
-C(dummy_mexico)[T.1]:C(century)[T.18]     0.2348      0.220      1.069      0.285      -0.196       0.665
+Intercept                                 0.5501      0.149      3.691      0.000       0.258       0.842
+C(dummy_mexico)[T.1]                     -0.2314      0.192     -1.207      0.227      -0.607       0.144
+C(century)[T.17]                         -0.3687      0.168     -2.194      0.028      -0.698      -0.039
+C(century)[T.18]                         -0.6622      0.164     -4.037      0.000      -0.984      -0.341
+C(dummy_mexico)[T.1]:C(century)[T.17]     0.0500      0.272      0.184      0.854      -0.484       0.584
+C(dummy_mexico)[T.1]:C(century)[T.18]     0.2508      0.222      1.130      0.258      -0.184       0.686
 =========================================================================================================
 
 Average Marginal Effects:
    Century      dy/dx    Std. Err.        z    P>|z|   [95% Conf. Interval]
-        16 -0.0905289    0.0704940    -1.28   0.1991 [-0.2286971, 0.0476392]
-        17 -0.0145455    0.0765973    -0.19   0.8494 [-0.1646761, 0.1355852]
-        18 -0.0018473    0.0437143    -0.04   0.9663 [-0.0875272, 0.0838327]
+        16 -0.0838608    0.0685930    -1.22   0.2215 [-0.2183031, 0.0505816]
+        17 -0.0719697    0.0769893    -0.93   0.3499 [-0.2228687, 0.0789293]
+        18  0.0076970    0.0443048     0.17   0.8621 [-0.0791404, 0.0945345]
 
 Tests of Equality of Marginal Effects:
-Test ME at century 16 vs 17: chi2(1) = 0.53, P>|chi2| = 0.4654
-Test ME at century 16 vs 18: chi2(1) = 1.14, P>|chi2| = 0.2850
-Test ME at century 17 vs 18: chi2(1) = 0.02, P>|chi2| = 0.8855
+Test ME at century 16 vs 17: chi2(1) = 0.01, P>|chi2| = 0.9082
+Test ME at century 16 vs 18: chi2(1) = 1.26, P>|chi2| = 0.2622
+Test ME at century 17 vs 18: chi2(1) = 0.80, P>|chi2| = 0.3698
 
 Summary Statistics for 'enforcement':
 Variable               Obs       Mean    Std. Dev.      Min      Max
-enforcement           1044  0.4607280    0.4986942        0        1
+enforcement           1044  0.5258621    0.4995700        0        1
 
 --------------------------------------------------------------------------------
 
@@ -195,35 +195,35 @@ Probit Regression Results for 'religion':
 Dep. Variable:               religion   No. Observations:                 1044
 Model:                         Probit   Df Residuals:                     1038
 Method:                           MLE   Df Model:                            5
-Date:                Sun, 29 Sep 2024   Pseudo R-squ.:                 0.02469
-Time:                        23:58:36   Log-Likelihood:                -155.96
-converged:                      False   LL-Null:                       -159.91
-Covariance Type:                  HC3   LLR p-value:                    0.1620
+Date:                Wed, 02 Oct 2024   Pseudo R-squ.:                 0.03288
+Time:                        22:31:51   Log-Likelihood:                -199.87
+converged:                      False   LL-Null:                       -206.66
+Covariance Type:                  HC3   LLR p-value:                   0.01845
 =========================================================================================================
                                             coef    std err          z      P>|z|      [0.025      0.975]
 ---------------------------------------------------------------------------------------------------------
-Intercept                                -1.5277      0.221     -6.926      0.000      -1.960      -1.095
-C(dummy_mexico)[T.1]                     -0.4026      0.331     -1.217      0.223      -1.051       0.246
-C(century)[T.17]                         -0.1629      0.258     -0.631      0.528      -0.669       0.343
-C(century)[T.18]                         -0.2384      0.254     -0.939      0.348      -0.736       0.259
-C(dummy_mexico)[T.1]:C(century)[T.17]    -3.6981      0.358    -10.338      0.000      -4.399      -2.997
-C(dummy_mexico)[T.1]:C(century)[T.18]     0.1088      0.408      0.266      0.790      -0.692       0.909
+Intercept                                -1.2744      0.192     -6.650      0.000      -1.650      -0.899
+C(dummy_mexico)[T.1]                     -0.4248      0.282     -1.505      0.132      -0.978       0.128
+C(century)[T.17]                         -0.1869      0.224     -0.834      0.404      -0.626       0.252
+C(century)[T.18]                         -0.4573      0.227     -2.011      0.044      -0.903      -0.012
+C(dummy_mexico)[T.1]:C(century)[T.17]    -3.9053      0.306    -12.758      0.000      -4.505      -3.305
+C(dummy_mexico)[T.1]:C(century)[T.18]     0.2691      0.355      0.758      0.448      -0.426       0.965
 =========================================================================================================
 
 Average Marginal Effects:
    Century      dy/dx    Std. Err.        z    P>|z|   [95% Conf. Interval]
-        16 -0.0365054    0.0313560    -1.16   0.2443 [-0.0979632, 0.0249524]
-        17 -0.0454545    0.0128199    -3.55   0.0004 [-0.0705816, -0.0203275]
-        18 -0.0189860    0.0143474    -1.32   0.1857 [-0.0471070, 0.0091349]
+        16 -0.0566230    0.0391515    -1.45   0.1481 [-0.1333599, 0.0201140]
+        17 -0.0719697    0.0159057    -4.52   0.0000 [-0.1031449, -0.0407944]
+        18 -0.0121100    0.0161288    -0.75   0.4528 [-0.0437224, 0.0195023]
 
 Tests of Equality of Marginal Effects:
-Test ME at century 16 vs 17: chi2(1) = 0.07, P>|chi2| = 0.7916
-Test ME at century 16 vs 18: chi2(1) = 0.26, P>|chi2| = 0.6114
-Test ME at century 17 vs 18: chi2(1) = 1.89, P>|chi2| = 0.1689
+Test ME at century 16 vs 17: chi2(1) = 0.13, P>|chi2| = 0.7165
+Test ME at century 16 vs 18: chi2(1) = 1.11, P>|chi2| = 0.2932
+Test ME at century 17 vs 18: chi2(1) = 6.98, P>|chi2| = 0.0082
 
 Summary Statistics for 'religion':
 Variable               Obs       Mean    Std. Dev.      Min      Max
-religion              1044  0.0354406    0.1849793        0        1
+religion              1044  0.0498084    0.2176532        0        1
 
 --------------------------------------------------------------------------------
 
@@ -233,34 +233,34 @@ Probit Regression Results for 'other':
 Dep. Variable:                  other   No. Observations:                 1044
 Model:                         Probit   Df Residuals:                     1038
 Method:                           MLE   Df Model:                            5
-Date:                Sun, 29 Sep 2024   Pseudo R-squ.:                 0.03010
-Time:                        23:58:36   Log-Likelihood:                -241.30
-converged:                      False   LL-Null:                       -248.79
-Covariance Type:                  HC3   LLR p-value:                   0.01046
+Date:                Wed, 02 Oct 2024   Pseudo R-squ.:                 0.03098
+Time:                        22:31:51   Log-Likelihood:                -372.59
+converged:                       True   LL-Null:                       -384.50
+Covariance Type:                  HC3   LLR p-value:                 0.0002349
 =========================================================================================================
                                             coef    std err          z      P>|z|      [0.025      0.975]
 ---------------------------------------------------------------------------------------------------------
 Intercept                                -1.5277      0.221     -6.926      0.000      -1.960      -1.095
-C(dummy_mexico)[T.1]                     -0.2750      0.314     -0.876      0.381      -0.890       0.340
-C(century)[T.17]                          0.0664      0.249      0.267      0.790      -0.422       0.555
-C(century)[T.18]                          0.2008      0.240      0.835      0.404      -0.270       0.672
-C(dummy_mexico)[T.1]:C(century)[T.17]    -4.0552      0.335    -12.089      0.000      -4.713      -3.398
-C(dummy_mexico)[T.1]:C(century)[T.18]    -0.1556      0.365     -0.426      0.670      -0.871       0.560
+C(dummy_mexico)[T.1]                      0.0625      0.284      0.220      0.826      -0.494       0.619
+C(century)[T.17]                          0.2375      0.245      0.971      0.332      -0.242       0.717
+C(century)[T.18]                          0.6406      0.234      2.734      0.006       0.181       1.100
+C(dummy_mexico)[T.1]:C(century)[T.17]    -0.5229      0.442     -1.184      0.236      -1.389       0.343
+C(dummy_mexico)[T.1]:C(century)[T.18]    -0.4106      0.317     -1.295      0.195      -1.032       0.211
 =========================================================================================================
 
 Average Marginal Effects:
    Century      dy/dx    Std. Err.        z    P>|z|   [95% Conf. Interval]
-        16 -0.0275769    0.0325259    -0.85   0.3965 [-0.0913277, 0.0361740]
-        17 -0.0719697    0.0159057    -4.52   0.0000 [-0.1031449, -0.0407944]
-        18 -0.0528530    0.0208743    -2.53   0.0113 [-0.0937667, -0.0119394]
+        16  0.0081374    0.0366422     0.22   0.8243 [-0.0636812, 0.0799561]
+        17 -0.0584848    0.0332311    -1.76   0.0784 [-0.1236179, 0.0066482]
+        18 -0.0791256    0.0304862    -2.60   0.0094 [-0.1388786, -0.0193726]
 
 Tests of Equality of Marginal Effects:
-Test ME at century 16 vs 17: chi2(1) = 1.50, P>|chi2| = 0.2202
-Test ME at century 16 vs 18: chi2(1) = 0.43, P>|chi2| = 0.5131
-Test ME at century 17 vs 18: chi2(1) = 0.53, P>|chi2| = 0.4664
+Test ME at century 16 vs 17: chi2(1) = 1.81, P>|chi2| = 0.1780
+Test ME at century 16 vs 18: chi2(1) = 3.35, P>|chi2| = 0.0671
+Test ME at century 17 vs 18: chi2(1) = 0.21, P>|chi2| = 0.6472
 
 Summary Statistics for 'other':
 Variable               Obs       Mean    Std. Dev.      Min      Max
-other                 1044  0.0641762    0.2451841        0        1
+other                 1044  0.1206897    0.3259224        0        1
 
 --------------------------------------------------------------------------------
