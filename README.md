@@ -45,6 +45,10 @@ You can also explain to the Agent what changes you want to make and put your own
 - **environment.yaml**: Environment specification file for easy setup of dependencies (can be used with `conda` or similar tools).
 - **README.md**: This file, providing an overview and instructions.
 
+## AI Statement
+
+Parts of this codebase were created with the assistance of AI tools. The accompanying research paper is entirely free from AI use and was designed and written solely by the authors.
+
 ## Acknowledgements
 
 We would like to thank Jeremy Edwards, Mattia Fochesato, Jane Humphries, Joel Mokyr, and Andreas Schanbacher for their valuable comments and suggestions; participants at the Annual Graduate Workshops at All Souls College, University of Oxford, in 2023 and 2024, for their stimulating feedback; and the Economic and Social History Master's Programme at the University of Oxford (2022–2023) for awarding the Joan Thirsk Dissertation Prize to Niclas Griesshaber. This repository and the associated paper are based on research conducted as part of that master's thesis.
