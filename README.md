@@ -1,4 +1,4 @@
-# Digitization and Analysis of Archival Documents with LLMs
+# LLM Digitization and Analysis of Archival Documents
 
 This repository contains code and data for digitizing Latin American guild ordinances and classifying their sentences into economic categories using Large Language Models (LLMs), in particular GPT-4o.
 
