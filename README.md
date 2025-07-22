@@ -1,6 +1,6 @@
 # LLM Digitization and Analysis of Archival Documents
 
-This repository contains code and data for digitizing Latin American guild ordinances and classifying their sentences into economic categories using Large Language Models (LLMs).
+This repository contains code and data for digitizing Latin American guild ordinances and classifying their sentences into economic categories using Large Language Models (LLMs), in particular GPT-4o.
 
 ## Getting Started Quickly
 
@@ -16,31 +16,36 @@ You can also explain to the Agent what changes you want to make and put your own
 
 **Note:** To access GPT-4o for LLM-based analysis, you will need an OpenAI API key. You can generate one at [https://platform.openai.com/api-keys](https://platform.openai.com/api-keys). The API key must be inserted in one of the code cells (prior to any LLM API calls) in the Jupyter notebooks. All relevant cells are clearly commented to guide you through this process. Alternatively, you can also create an .env file to store your API keys there.
 
-## Repository Structure
+## Repository Structure (Refined)
 
 - **01_llm_digitization/**
   - **llm_digitization_code/**
-    - `01_llm_digitization_pipeline.ipynb`: Digitizes archival image scans displaying guild ordinances.
-    - `02_text_files_to_csv.ipynb`: Converts guild ordinance text files to `regulations_dataset.csv`.
+    - `01_llm_digitization_pipeline.ipynb`: Main notebook for digitizing archival image scans of guild ordinances.
+    - `02_text_files_to_csv.ipynb`: Converts text files of guild ordinances into structured CSV datasets.
   - **llm_digitization_data/**
-    - **archival_image_scans/**: Image scans from Mexican and Peruvian guild ordinances.
-    - **full_text_data/**: Digitized text data from image scans.
-    - **regulations_text_data/**: Digitized text data from image scans. Regulation paragraphs only.
+    - **archival_image_scans/**: Contains subfolders with original image scans (TIFF format) of guild ordinances from Mexico and Peru. *Note: These files are not tracked in git and are available upon request for replication.*
+    - **full_text_data/**: Contains plain text transcriptions of the full content of each ordinance, organized by country and guild.
+    - **regulations_text_data/**: Contains only the regulatory paragraphs from each ordinance, as plain text files, organized by country and guild.
 
 - **02_llm_classification/**
-  - `llm_classification.ipynb`: Classifies digitized guild ordinance sentences using GPT-4.
+  - `llm_classification.ipynb`: Notebook for classifying sentences from the ordinances into economic categories using GPT-4o.
 
 - **03_probit_regression/**
-  - `01_transform_dataset.ipynb`: Transforms `llm_classification_results.csv` into `sentence_dataset.csv`
-  - `02_probit_regression.ipynb`: Performs probit regression analysis on `sentence_dataset.csv`
-  - `probit_regression_results.txt`: Probit regression results with average marginal effects.
+  - `01_transform_dataset.ipynb`: Transforms LLM classification results into a sentence-level dataset for analysis.
+  - `02_probit_regression.ipynb`: Performs probit regression analysis on the sentence-level dataset.
+  - `probit_regression_results.txt`: Contains the results and average marginal effects from the regression analysis.
 
 - **datasets/**
-  - `llm_classification_results.csv`: LLM-based classification results.
-  - `regulations_dataset.csv`: Dataset containing guild regulations.
-  - `sentence_dataset.csv`: Sentence-level dataset based on `llm_classification_results.csv`.
+  - `llm_classification_results.csv`: Results of the LLM-based classification.
+  - `regulations_dataset.csv`: Structured dataset of guild regulations.
+  - `sentence_dataset.csv`: Sentence-level dataset derived from classification results.
   - **summary_statistics/**
-    - `summary_statistics.ipynb`
+    - `summary_statistics.ipynb`: Notebook for generating and exploring summary statistics of the datasets.
+
+- **environment.yaml**: Environment specification file for easy setup of dependencies (can be used with `conda` or similar tools).
+- **README.md**: This file, providing an overview and instructions.
+
+*If you have any questions or need help, you can use the agent in your IDE to ask for assistance at any time!*
 
 ## Acknowledgements
 
