@@ -11,7 +11,7 @@ This repository is primarily composed of Jupyter notebooks designed for economic
 **Fastest way to get started:**
 - Download and install a modern IDE such as [VSCode](https://code.visualstudio.com) or [Cursor](https://cursor.com/en).
 - Open the IDE and enter "Agent Mode" (in Cursor, press `Cmd + L`).
-- Ask the agent to **clone this repository** and set it up for you. For example, you can write: `Clone https://github.com/niclasgriesshaber/guilds-llm and set it up.`
+- Ask the agent to **clone this repository** and set it up for you. For example, you can write: `Clone https://github.com/niclasgriesshaber/guilds_llm and set it up.`
 - The agent will handle the setup, so you can immediately start exploring the notebooks.
 
 You can also explain to the Agent what changes you want to make and put your own data into the project. You can then quickly adjust this repository for your needs.
