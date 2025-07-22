@@ -2,7 +2,7 @@
 
 This repository contains code and data for digitizing Latin American guild ordinances and classifying their sentences into economic categories using Large Language Models (LLMs).
 
-## Getting Started Quickly (For Economic Historians)
+## Getting Started Quickly
 
 This repository is primarily composed of Jupyter notebooks designed for economic historians interested in quantitative analysis of historical guild regulations. You do **not** need strong technical skills to get started.
 
